@@ -16,7 +16,10 @@ function App() {
       <ShoppingForm addItem={addItem} />
 
       <ul>
-        {/* listar todos los objetos. Indicar tanto su nombre como su categoría. */}
+        {items.map((item,index)=>(<li>
+         {item.product} - {item.category} 
+        </li>
+      ))}
       </ul>
     </div>
   );
